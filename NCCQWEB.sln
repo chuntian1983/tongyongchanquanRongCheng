@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCCQ.DAL", "NCCQ.DAL\NCCQ.DAL.csproj", "{EC0DEB88-282A-47AF-AE40-C8D6FBAABFCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCCQ.Model", "NCCQ.Model\NCCQ.Model.csproj", "{9BCF7667-7886-452A-ACC5-44AD762089F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCCQ.BLL", "NCCQ.BLL\NCCQ.BLL.csproj", "{5A86E0FF-5CFC-45EC-8E94-FD1E090FF527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{5251C3FC-977E-45DC-9855-555D5685A706}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCCQ.DBFactory", "NCCQ.DBFactory\NCCQ.DBFactory.csproj", "{C3480743-DB56-4295-BF17-A989F00BD371}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCCQ.Util", "NCCQ.Util\NCCQ.Util.csproj", "{6FC10218-B29A-4437-9507-9CC23ACBB8C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC0DEB88-282A-47AF-AE40-C8D6FBAABFCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC0DEB88-282A-47AF-AE40-C8D6FBAABFCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC0DEB88-282A-47AF-AE40-C8D6FBAABFCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC0DEB88-282A-47AF-AE40-C8D6FBAABFCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BCF7667-7886-452A-ACC5-44AD762089F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BCF7667-7886-452A-ACC5-44AD762089F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BCF7667-7886-452A-ACC5-44AD762089F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BCF7667-7886-452A-ACC5-44AD762089F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A86E0FF-5CFC-45EC-8E94-FD1E090FF527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A86E0FF-5CFC-45EC-8E94-FD1E090FF527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A86E0FF-5CFC-45EC-8E94-FD1E090FF527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A86E0FF-5CFC-45EC-8E94-FD1E090FF527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5251C3FC-977E-45DC-9855-555D5685A706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5251C3FC-977E-45DC-9855-555D5685A706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5251C3FC-977E-45DC-9855-555D5685A706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5251C3FC-977E-45DC-9855-555D5685A706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3480743-DB56-4295-BF17-A989F00BD371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3480743-DB56-4295-BF17-A989F00BD371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3480743-DB56-4295-BF17-A989F00BD371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3480743-DB56-4295-BF17-A989F00BD371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FC10218-B29A-4437-9507-9CC23ACBB8C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC10218-B29A-4437-9507-9CC23ACBB8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC10218-B29A-4437-9507-9CC23ACBB8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC10218-B29A-4437-9507-9CC23ACBB8C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

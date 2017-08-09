@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PushNongCunChanQuan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DateFrom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DateTo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GongGaoType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PushNongCunChanQuanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PushNongCunChanQuanResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="PushNongCunChanQuanSoapIn">
+    <wsdl:part name="parameters" element="tns:PushNongCunChanQuan" />
+  </wsdl:message>
+  <wsdl:message name="PushNongCunChanQuanSoapOut">
+    <wsdl:part name="parameters" element="tns:PushNongCunChanQuanResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpGetIn" />
+  <wsdl:message name="HelloWorldHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PushNongCunChanQuanHttpGetIn">
+    <wsdl:part name="Title" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="DateFrom" type="s:string" />
+    <wsdl:part name="DateTo" type="s:string" />
+    <wsdl:part name="GongGaoType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PushNongCunChanQuanHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpPostIn" />
+  <wsdl:message name="HelloWorldHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PushNongCunChanQuanHttpPostIn">
+    <wsdl:part name="Title" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="DateFrom" type="s:string" />
+    <wsdl:part name="DateTo" type="s:string" />
+    <wsdl:part name="GongGaoType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PushNongCunChanQuanHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="WangZhanSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PushNongCunChanQuan">
+      <wsdl:input message="tns:PushNongCunChanQuanSoapIn" />
+      <wsdl:output message="tns:PushNongCunChanQuanSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WangZhanHttpGet">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpGetIn" />
+      <wsdl:output message="tns:HelloWorldHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PushNongCunChanQuan">
+      <wsdl:input message="tns:PushNongCunChanQuanHttpGetIn" />
+      <wsdl:output message="tns:PushNongCunChanQuanHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WangZhanHttpPost">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpPostIn" />
+      <wsdl:output message="tns:HelloWorldHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PushNongCunChanQuan">
+      <wsdl:input message="tns:PushNongCunChanQuanHttpPostIn" />
+      <wsdl:output message="tns:PushNongCunChanQuanHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WangZhanSoap" type="tns:WangZhanSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PushNongCunChanQuan">
+      <soap:operation soapAction="http://tempuri.org/PushNongCunChanQuan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WangZhanSoap12" type="tns:WangZhanSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PushNongCunChanQuan">
+      <soap12:operation soapAction="http://tempuri.org/PushNongCunChanQuan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WangZhanHttpGet" type="tns:WangZhanHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PushNongCunChanQuan">
+      <http:operation location="/PushNongCunChanQuan" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WangZhanHttpPost" type="tns:WangZhanHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PushNongCunChanQuan">
+      <http:operation location="/PushNongCunChanQuan" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WangZhan">
+    <wsdl:port name="WangZhanSoap" binding="tns:WangZhanSoap">
+      <soap:address location="http://www.rcggzy.cn/rcztb/JSGCZtbMis2_RC/Pages/WebService/WangZhan.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WangZhanSoap12" binding="tns:WangZhanSoap12">
+      <soap12:address location="http://www.rcggzy.cn/rcztb/JSGCZtbMis2_RC/Pages/WebService/WangZhan.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WangZhanHttpGet" binding="tns:WangZhanHttpGet">
+      <http:address location="http://www.rcggzy.cn/rcztb/JSGCZtbMis2_RC/Pages/WebService/WangZhan.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WangZhanHttpPost" binding="tns:WangZhanHttpPost">
+      <http:address location="http://www.rcggzy.cn/rcztb/JSGCZtbMis2_RC/Pages/WebService/WangZhan.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

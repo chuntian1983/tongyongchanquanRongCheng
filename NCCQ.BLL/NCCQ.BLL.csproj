@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A86E0FF-5CFC-45EC-8E94-FD1E090FF527}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NCCQ.BLL</RootNamespace>
+    <AssemblyName>NCCQ.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminUserBll.cs" />
+    <Compile Include="ComFunction.cs" />
+    <Compile Include="MainH.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="T_AdminUserBll.cs" />
+    <Compile Include="T_BusinessConsultingBll.cs" />
+    <Compile Include="T_FileInfoBll.cs" />
+    <Compile Include="T_LinksBll.cs" />
+    <Compile Include="T_ListedProjectBll.cs" />
+    <Compile Include="T_ListedProjectTypeBll.cs" />
+    <Compile Include="T_NewsBll.cs" />
+    <Compile Include="T_NewsTypeBll.cs" />
+    <Compile Include="T_OrganizationBll.cs" />
+    <Compile Include="T_role.cs" />
+    <Compile Include="T_RoleRightBll.cs" />
+    <Compile Include="T_SupplyDemandBll.cs" />
+    <Compile Include="T_SysFunBll.cs" />
+    <Compile Include="T_SysLogBll.cs" />
+    <Compile Include="T_UserInfoBll.cs" />
+    <Compile Include="UpLoad.cs" />
+    <Compile Include="UpLoadImg.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NCCQ.DAL\NCCQ.DAL.csproj">
+      <Project>{EC0DEB88-282A-47AF-AE40-C8D6FBAABFCE}</Project>
+      <Name>NCCQ.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NCCQ.Model\NCCQ.Model.csproj">
+      <Project>{9BCF7667-7886-452A-ACC5-44AD762089F2}</Project>
+      <Name>NCCQ.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NCCQ.Util\NCCQ.Util.csproj">
+      <Project>{6FC10218-B29A-4437-9507-9CC23ACBB8C6}</Project>
+      <Name>NCCQ.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
