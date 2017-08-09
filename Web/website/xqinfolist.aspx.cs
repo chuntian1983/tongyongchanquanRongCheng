@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using NCCQ.DBFactory;
 using System.Data;
+using Maticsoft.Common;
 
 namespace Web.website
 {
@@ -15,6 +16,11 @@ namespace Web.website
         {
             if (Request.QueryString["typeid"] != null)
             {
+                if (safe_360.CheckData(Request.QueryString["typeid"]))
+                {
+                    MessageBox.ShowAndRedirect(this, "您输入的字符含有不安全标识，请重新输入！", "default.aspx");
+                    return;
+                }
                 BindGpRep(Request.QueryString["typeid"]);
             }
         }
