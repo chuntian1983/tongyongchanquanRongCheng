@@ -46,7 +46,7 @@ a.class:active   {color:   #fbae1a;} /*激活时 */
                             </tr>
                             <tr>
                                 <td style="height: 778px; vertical-align: top; border: 6px solid #f6f6f6; border-top: 0;">
-                                    <table cellpadding="0" cellspacing="0" style="width: 98%; height: 100%; margin-left: 5px;
+                                    <table cellpadding="0" cellspacing="0" style="width: 760px; height: 100%; margin-left: 5px;
                                         margin-top: 5px; text-align: left">
                                         <tr>
                                             <td height="41" style="height: 35px; text-align: center; font-size: 20px">
@@ -66,8 +66,9 @@ a.class:active   {color:   #fbae1a;} /*激活时 */
                                                 </td>
                                         </tr>
                                         <tr>
-                                            <td style="height: 750px;padding:0 10px; line-height:25px; vertical-align: top; ">
-                                                <%=Contents%>
+                                            <td style="height: 750px;padding:0 10px; line-height:25px; vertical-align: top; overflow:hidden; ">
+                                                
+                                                <asp:Label ID="lbcon" runat="server" Text=""></asp:Label>
                                                 <br />
                                                 <div id="Appendix" runat="server" style="color: Red; border-top: 1px solid #f6f6f6;
                                                     width: 100%;">

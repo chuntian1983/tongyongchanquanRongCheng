@@ -680,6 +680,7 @@
     <Content Include="SuperWeb\UserMain.aspx" />
     <Content Include="SuperWeb\zd\ntype.aspx" />
     <Content Include="SuperWeb\zd\proType.aspx" />
+    <None Include="Properties\PublishProfiles\配置文件1.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

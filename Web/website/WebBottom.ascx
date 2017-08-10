@@ -4,7 +4,7 @@
     <tr>
         <td height="30px">
             <br />
-            <font style="color: #000000; font-size: 12px; line-height: 200%">Copyright®2014 - 荣成市农村产权交易平台
+            <font style="color: #000000; font-size: 12px; line-height: 200%">Copyright®2017 - 荣成市农村产权交易平台
                 <a href="../SuperWeb/Default.aspx" target="_blank">管理登录 </a>
                 <br />
                 技术支持：<a href="http://www.nongyou.com.cn/" target="_blank"><font style="color: #000000;

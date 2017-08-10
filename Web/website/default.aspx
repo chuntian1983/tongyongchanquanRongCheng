@@ -792,7 +792,7 @@
                                                            <td><a href='gqinfo.aspx?id=<%#Eval("id")%>' title='<%#Eval("ProName")%>'><%#Eval("ProName").ToString().Length > 4 ? Eval("ProName").ToString().Substring(0, 4) + ".." : Eval("ProName")%></a> </td>
                                                            <td><%#Eval("dGlebePurpose")%></td>
                                                            <td><%#Eval("dQuotation")%></td>
-                                                           <td><%#Eval("dArea")%></td>
+                                                           <td><%#Eval("dArea").ToString().Length>6?Eval("darea").ToString().Substring(0,6)+"..":Eval("dArea")%></td>
                                                            <td><%#DateTime.Parse(Eval("dListingDate").ToString()).ToString("yyyy-MM-dd")%></td>
                                                            
                                                            </tr>

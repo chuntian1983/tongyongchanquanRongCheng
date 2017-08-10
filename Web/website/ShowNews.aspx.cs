@@ -52,7 +52,8 @@ namespace Web.website
                     DataRow row = dt.Rows[0];
                     ClassName =DbHelperSQL.Query("select newstypename from t_newstype where id='" + row["NewsTypeid"].ToString() + "'").Tables[0].Rows[0][0].ToString();
                     NewsTitle = row["NewsTitle"].ToString();
-                    Contents = row["NewsContent"].ToString();
+                lbcon.Text= row["NewsContent"].ToString(); ;
+               // Contents = row["NewsContent"].ToString();
                     AddUser = row["Editor"].ToString();
                     AddTime = row["CreateDate"].ToString();
                     ReadCounts = row["NumClicks"].ToString();
